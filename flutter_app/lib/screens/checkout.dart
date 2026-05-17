@@ -14,7 +14,7 @@ class CheckoutScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(p.name, style: Theme.of(context).textTheme.headline6),
+            Text(p.name, style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 8),
             Text('Price: \$${p.price.toStringAsFixed(0)}'),
             const SizedBox(height: 16),

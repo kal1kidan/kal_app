@@ -20,7 +20,7 @@ class DetailScreen extends StatelessWidget {
             const SizedBox(height: 8),
             Text(p.description),
             const SizedBox(height: 12),
-            Text('Notes', style: Theme.of(context).textTheme.headline6),
+            Text('Notes', style: Theme.of(context).textTheme.titleMedium),
             Text('Top: ${p.notes.top}'),
             Text('Heart: ${p.notes.heart}'),
             Text('Base: ${p.notes.base}'),

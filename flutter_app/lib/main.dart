@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'lib/screens/home.dart';
-import 'lib/screens/detail.dart';
-import 'lib/screens/checkout.dart';
-import 'lib/screens/onboarding.dart';
-import 'lib/screens/profile.dart';
-import 'lib/screens/splash.dart';
+import 'screens/home.dart';
+import 'screens/detail.dart';
+import 'screens/checkout.dart';
+import 'screens/onboarding.dart';
+import 'screens/profile.dart';
+import 'screens/splash.dart';
 
 void main() {
   runApp(const KalApp());
