@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-burgundy: #4A1C2A;
+  --color-surface-ivory: #FFFDF9;
+  --color-surface-nude: #F5E6DA;
+  --color-accent-gold: #D4AF37;
+  --color-text-espresso: #2B1A17;
+  --color-dark-bg: #1A0F0D;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --radius-luxury: 24px;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-surface-nude font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .luxury-glass {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10;
+  }
+  
+  .glass-card {
+    background: rgba(26, 15, 13, 0.6);
+    backdrop-filter: blur(20px);
+    border: 0.5px solid rgba(212, 175, 55, 0.2);
+  }
+
+  .text-shadow-gold {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  }
+
+  .burgundy-gradient {
+    background: radial-gradient(circle at center, #4A1C2A 0%, #2B1A17 70%, #1A0F0D 100%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, rgba(212,175,55,0) 0%, rgba(212,175,55,0.15) 50%, rgba(212,175,55,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+}
+
