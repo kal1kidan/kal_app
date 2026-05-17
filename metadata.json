@@ -1,0 +1,6 @@
+{
+  "name": "kal Perfumes",
+  "description": "A luxury fragrance e-commerce experience featuring cinematic editorial design and bespoke olfactory storytelling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
