@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+set -e
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+if [ -n "$JAVA_HOME" ]; then
+  exec "$JAVA_HOME/bin/java" -jar "$SCRIPT_DIR/gradle/wrapper/gradle-wrapper.jar" "$@"
+else
+  exec java -jar "$SCRIPT_DIR/gradle/wrapper/gradle-wrapper.jar" "$@"
+fi
